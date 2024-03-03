@@ -22,9 +22,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                powershell 'go build ./main.go'
+                powershell 'C:\\Users\\ruslan\\sdk\\go1.22.0\\bin\\go.exe build .\\main.go'
             }
         }
+
 
         stage('Run') {
             steps {
