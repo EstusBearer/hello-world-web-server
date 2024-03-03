@@ -22,13 +22,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'go build ./main.go'
+                powershell 'go build ./main.go'
             }
         }
 
         stage('Run') {
             steps {
-                sh './main.exe'
+                powershell './main.exe'
             }
         }
     }
