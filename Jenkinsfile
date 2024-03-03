@@ -22,13 +22,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'go build -o myGoApp'
+                sh 'go build .\main.go'
             }
         }
 
         stage('Run') {
             steps {
-                sh './myGoApp'
+                sh './main.exe'
             }
         }
     }
