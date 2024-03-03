@@ -22,7 +22,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'go build .\main.go'
+                sh 'go build ./main.go'
             }
         }
 
